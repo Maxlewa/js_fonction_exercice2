@@ -42,6 +42,40 @@
 //     return mdp
 // }
 
-console.log(logIn());
+// console.log(logIn());
+
+// SANS IF :
+
+// let mdp = prompt("Mot de passe ?")
+
+// let logIn = () => {
+//     while (mdp !== "mdp") {
+//         mdp = prompt("Mot de passe ?")
+//     }
+//     alert("Vous êtes connecté")
+//     return mdp
+// }
+
+// console.log(logIn());
 
 // EXO 4
+
+let classe = []
+let ajout = prompt("Veux-tu ajouter une personne ?")
+let qui;
+let ok;
+
+let stagiaires = () => {
+    while (ajout == "oui") {
+        qui = prompt("Qui ?")
+        classe.push(qui)
+        ajout = prompt("Veux-tu ajouter une personne ?")
+    } if (ajout == "non") {
+        ok = prompt(`OK, voici la classe : ${classe}`)
+    } else {
+        alert("Erreur, répondez par oui ou par non svp")
+    }
+    return classe
+}
+
+console.log(stagiaires());
