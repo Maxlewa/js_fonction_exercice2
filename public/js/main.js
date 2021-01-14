@@ -8,15 +8,26 @@
 
 // console.log(reverseNumber(num));
 
+// AYHAN
+
+// let chiffre = parseInt(prompt("Nombre ?"))
+// let revNumber = (n) => {
+//     n = n.toString().split("").reverse().join("");
+//     return n
+// }
+
+// let nbr = revNumber(chiffre)
+// console.log(nbr);
+
 // EXO 2
 
-// let number = prompt("Nombre ?")
+// let number = parseInt(prompt("Nombre ?"))
 // let result = number / 2;
 
 // let divPar2 = () => {
 //     switch (number % 2 === 0) {
 //         case true:
-//             alert(`$${number} est divisible par 2 -> ${number} : 2 = ${result}`)
+//             alert(`${number} est divisible par 2 -> ${number} : 2 = ${result}`)
 //             break;
     
 //         default:
@@ -28,54 +39,44 @@
 
 // console.log(divPar2(result));
 
+// CHECK AYHAN CORRECTION, + EXACT
+
 // EXO 3
 
 // let mdp = prompt("Mot de passe ?")
 
-// let logIn = () => {
-//     while (mdp !== "mdp") {
-//         mdp = prompt("Mot de passe ?")
+// let logIn = (a) => {
+//     while (a !== "mdp") {
+//         a = prompt("Mot de passe ?")
 //     }
-//     if (mdp == "mdp") {
+//     if (a == "mdp") {
 //         alert("Vous êtes connecté")
 //     }
-//     return mdp
 // }
 
 // console.log(logIn());
 
-// SANS IF :
-
-// let mdp = prompt("Mot de passe ?")
-
-// let logIn = () => {
-//     while (mdp !== "mdp") {
-//         mdp = prompt("Mot de passe ?")
-//     }
-//     alert("Vous êtes connecté")
-//     return mdp
-// }
-
-// console.log(logIn());
+// POSSIBLE AUSSI AVEC UN COUNT, VOIR CORRECTION
 
 // EXO 4
 
-let classe = []
-let ajout = prompt("Veux-tu ajouter une personne ?")
-let qui;
-let ok;
+let coding16 = []
 
-let stagiaires = () => {
-    while (ajout == "oui") {
-        qui = prompt("Qui ?")
-        classe.push(qui)
-        ajout = prompt("Veux-tu ajouter une personne ?")
-    } if (ajout == "non") {
-        ok = prompt(`OK, voici la classe : ${classe}`)
-    } else {
-        alert("Erreur, répondez par oui ou par non svp")
-    }
-    return classe
+let rentrer = (a) => {
+    let tab = a.split(" ")
+    coding16.push(...tab)
+    coding16.forEach(el => {
+        console.log(`${el} est rentré, salut`);
+    });
 }
 
-console.log(stagiaires());
+let sortir = (a) => {
+    coding16.pow(a)
+}
+
+let personne = prompt("Qui faire entrer ?")
+rentrer(personne)
+
+console.log(coding16);
+
+// CHECK CORRECTION AYHAN
